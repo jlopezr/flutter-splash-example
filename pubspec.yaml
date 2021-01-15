@@ -41,6 +41,8 @@ flutter_native_splash:
   android_disable_fullscreen: true
 
 flutter_icons:
+  android: true
+  ios: true
   image_path: assets/icon-128x128.png
 
 
