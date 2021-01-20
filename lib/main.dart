@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+
+Future slowDown() {
+  return new Future.delayed(const Duration(seconds: 10), () => runApp(MyApp()));
+}
 
 void main() {
-  runApp(MyApp());
+  slowDown();
 }
 
 class MyApp extends StatelessWidget {
